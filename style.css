@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+}
+
+
+.container-bg {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: 100vh;
+    background: url('./assets/images/Rectangle-blue.png');
+    background-color: #FCF8FF;
+    border: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 1.25rem;
+}
+
+#logo-container {
+    margin: 3.125rem;
+}
+
+.menu a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: 0.01125rem;
+
+    color: #ffffff;
+}
+
+.green-detail {
+    border-bottom: 2px solid  #44FFA1;
+}
+
+.detail-container-1 {
+    position: absolute;
+    width: 270.29px;
+    height: 215.1px;
+    left: 5.39px;
+    top: 100.94px;
+  }
+
+.detail-container-2 {
+    position: absolute;
+    width: 141.7px;
+    height: 112.71px;
+    left: 1360.4px;
+    top: 431.55px;
+
+}
+  
+.detail-container-1 img, .detail-container-2 img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+.principal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h1-container h1 {
+    font-family: 'Fraunces 144pt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    padding-top: 9.25rem;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2.3rem;
+}
+
+.main-button a, .info-container a{
+    text-decoration: none;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 2rem;
+
+    color: #24053E;
+
+    border: 2px solid #44FFA1;
+    background-color: #44FFA1;
+    padding: 0.625rem 1.25rem;
+}
+
+.cellphone {
+    position: absolute;
+    top: 550px;
+    left: 470px;
+}
+
+.cellphone img {
+    width: 70%;
+}
+
+.other-bg {
+    background: #FCF8FF;
+    width: 1470px;
+    height: 960px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+}
+
+.list-container {
+    padding-top: 6.25rem;
+    display: grid;
+    margin: 10rem;
+}
+
+.list-container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.875rem;
+}
+
+.number-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.number-list {
+    margin-top: 2.5rem;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 1.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.object-title {
+    font-family: 'Fraunces 144pt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #24053E;
+}
+
+.text-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #24053E;
+}
+
+.contact-container {
+    width: 100vw;
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    margin-bottom: 3.125rem;
+}
+
+.contact-img-container {
+    position: absolute;
+    top: 170px;
+    left: 35%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+}
+  
+.contact-img-container img {
+    width: 50%;
+}
+
+.info-container-bg {
+    background-color: #1c2237;
+    width: 730px;
+    height: 413px;
+
+}
+  
+.info-container {
+    color: #fff;
+    padding: 0.625rem;
+    width: 100%;
+    max-width: 730px;
+    height: 100%;
+    max-height: 413px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+  
+.info-container h2 {
+
+    color: #ffffff;
+    font-family: 'Fraunces 144pt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    align-self: center !important;
+}
+
+.info-container p {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    padding: 1.25rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.image-footer-container svg:nth-child(2) {
+    margin: 0 1.25rem;
+}
