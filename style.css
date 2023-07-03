@@ -305,7 +305,7 @@ footer {
     height: 800px;
   }
 
-  .list-container {
+  .list-container ul {
     margin: 120px;
     display: flex;
     flex-direction: column;
