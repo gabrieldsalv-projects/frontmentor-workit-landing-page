@@ -123,7 +123,7 @@ body {
 
 .other-bg {
     background: #FCF8FF;
-    width: 1470px;
+    width: auto;
     height: 960px;
 
     display: flex;
@@ -267,47 +267,63 @@ footer {
     margin: 0 1.25rem;
 }
 
-@media (max-width: 480px) {
-  .menu {
-    height: 30px;
-  }
+@media (max-width: 767px) {
+    /* Aplique as alterações de estilo para dispositivos menores aqui */
+  
+    /* Ajustar tamanho da fonte */
+    body {
+      font-size: 14px;
+    }
+  
+    /* Diminuir tamanho dos elementos */
+    .h1-container h1 {
+      font-size: 48px;
+    }
+  
+    .main-button a,
+    .info-container a {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
 
-  .other-bg {
-    width: 100%;
-    height: 400px;
-  }
+    .other-bg {
+        height: 100vh;
+    }
+  
+    .object-title {
+      font-size: 24px;
+    }
+  
+    .text-list {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    .list-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    
+      .list-container ul {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    .contact-container {
+        height: 100vh;
+    }
 
-  .list-container {
-    margin: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .menu {
-    height: 40px;
-  }
+    .info-container-bg {
+        height: 70%;
+    }
 
-  .other-bg {
-    width: 100%;
-    height: 600px;
+    .info-container {
+        padding-top: 100px;
+    }
   }
-
-  .list-container {
-    margin: 80px;
-  }
-}
-@media (max-width: 1024px) {
-  .menu {
-    height: 50px;
-  }
-
-  .other-bg {
-    width: 100%;
-    height: 800px;
-  }
-
-  .list-container ul {
-    margin: 120px;
-    display: flex;
-    flex-direction: column;
-  }
-}
+  
